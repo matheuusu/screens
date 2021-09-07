@@ -1,0 +1,131 @@
+
+/* Globals-------------------------------------- */
+
+:root {
+    --red: #E50914;
+    --black: #141414;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--black);
+    color: white;
+}
+
+body, button, input, textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+.content{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* input and buttons----------------------------- */
+
+.button {
+    background-color: rgba(220, 220, 220, .1);
+    border: none;
+    color: white;
+
+    padding: 1.5rem 3rem;
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    transition: .4s ease all;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: white;
+    color: var(--black);
+}
+
+.button i {
+    margin-right: .5rem;
+}
+
+/* header---------------------------------------- */
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header .logo {
+    margin-left: .5rem;
+    color: var(--red);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+header nav a {
+    color: #AAA;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* main content---------------------------------- */
+
+.main-movie {
+    font-size: 1.6rem;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url(../images/capa-home.png);
+
+    height: 40rem;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-movie .description {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.main-movie .title {
+    margin-top: 10%;
+    font-size: 3.5rem;
+}
+
+.container {
+    margin-left: 2rem;
+}
+
+.main-movie .container {
+    width: 70%;
+}
+
+.box-movie {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carousel-movie {
+    margin-top: .5rem;
+}
